@@ -1,0 +1,137 @@
+:root {
+  --bg: #fff3f6;
+  --card: #ffffff;
+  --ink: #3a1620;
+  --ink-soft: #6b2e42;
+  --pink: #b3175f;
+  --pink-soft: #ffd9e6;
+  --pink-deep: #7a0f42;
+  --border: #f2c9d8;
+  --max-width: 720px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+header.site-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 56px;
+}
+
+header.site-header .paw {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--pink-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+header.site-header .brand {
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--pink);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 40px 0 12px;
+  color: var(--pink-deep);
+}
+
+p {
+  margin: 0 0 16px;
+  color: var(--ink-soft);
+}
+
+.tagline {
+  font-size: 17px;
+  color: var(--ink-soft);
+  margin-bottom: 32px;
+}
+
+.updated {
+  font-size: 13px;
+  color: var(--ink-soft);
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px 28px 8px;
+}
+
+a {
+  color: var(--pink);
+  font-weight: 600;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.pill {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--pink);
+  color: #fff !important;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.pill.ghost {
+  background: transparent;
+  border: 2px solid var(--pink);
+  color: var(--pink) !important;
+}
+
+footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--ink-soft);
+  opacity: 0.8;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 32px;
+  font-size: 14px;
+}
